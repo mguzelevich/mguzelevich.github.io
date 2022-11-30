@@ -1,0 +1,58 @@
+baseURL: "https://mikh.pro"
+title: "Mikh Personal Page"
+
+# post pagination
+paginate: "6"
+
+# post excerpt
+summaryLength: "15"
+
+languageCode: 'en-us'
+# disable language
+disableLanguages: []
+DefaultContentLanguage: "en"
+enableMissingTranslationPlaceholders: true
+
+## Site Settings
+
+# #353b43
+# #6c757d
+# #737f8a
+
+menu:
+  main:
+  - name: "About"
+    URL: "#about"
+    weight: 1
+  # - name: "Projects"
+  #   URL: "#projects"
+  #   weight: 2
+  - name: "Contact"
+    URL: "#signup"
+    weight: 3
+
+markup:
+  goldmark:
+    # extensions:
+    #   definitionList: true
+    #   footnote: true
+    #   linkify: true
+    #   linkifyProtocol: https
+    #   strikethrough: true
+    #   table: true
+    #   taskList: true
+    #   typographer: true
+    # parser:
+    #   attribute:
+    #     block: false
+    #     title: true
+    #   autoHeadingID: true
+    #   autoHeadingIDType: github
+    renderer:
+      # hardWraps: false
+      unsafe: true
+      # xhtml: false
+
+ignoreErrors: 
+- "error-missing-instagram-accesstoken"
+

@@ -1,7 +1,10 @@
 .PHONY: run test clean prepare
 
+# tag = klakegg/hugo:latest
+tag = klakegg/hugo:ext-ubuntu
+
 exec_root = $(shell pwd)
-exec_cmd = docker run --rm -it -v $(exec_root):/src -p 1313:1313 klakegg/hugo:latest
+exec_cmd = docker run --rm -it -v $(exec_root):/src -p 1313:1313 $(tag)
 
 
 dummy:

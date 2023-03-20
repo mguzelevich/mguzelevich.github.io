@@ -43,46 +43,53 @@
         {{ with site.Data.homepage.projects }}
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
+                {{ range $i, $p := . }}
                 <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ .card1.img }}" alt="..." /></div>
+                <!-- <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{{ $p.img }}" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>{{ .card1.title }}</h4>
-                            <p class="text-black-50 mb-0">{{ .card1.text }}</p>
+                            <h4>{{ .title }}</h4>
+                            <p class="text-black-50 mb-0">{{ .text }}</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+
                 <!-- Project One Row-->
+                {{if not (modBool $i 2)}}
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="{{ .card2.img }}" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
+                    <div class="col-lg-1"><img class="img-fluid" src="{{ $p.img }}" alt="..." /></div>
+                    <div class="col-lg-11">
+                        <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">{{ .card2.title }}</h4>
-                                    <p class="mb-0 text-white-50">{{ .card2.text }}</p>
+                                    <h4 class="">{{ $p.title }}</h4>
+                                    <p class="mb-0 ">{{ $p.text }}</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{ else }}
                 <!-- Project Two Row-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="{{ .card3.img }}" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                    <div class="col-lg-1"><img class="img-fluid" src="{{ $p.img }}" alt="..." /></div>
+                    <div class="col-lg-11 order-lg-first">
+                        <div class="text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">{{ .card3.title }}</h4>
-                                    <p class="mb-0 text-white-50">{{ .card3.text }}</p>
+                                    <h4 class="">{{ $p.title }}</h4>
+                                    <p class="mb-0 ">{{ $p.text }}</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{ end }}
+                {{ end }}
             </div>
         </section>
         {{ end }}

@@ -20,16 +20,25 @@ about:
     url: "#about"
   image: "assets/img/ipad.png"
 
-# projects:
-#   card1:
-#     title: "Graysx"
-#     text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
-#     img: "assets/img/bg-masthead.jpg"
-#   card2:
-#     title: "Graysx"
-#     text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
-#     img: "assets/img/demo-image-01.jpg"
-#   card3:
-#     title: "Graysx"
-#     text: "Place Cons Rerum Provide SuntSin Incid Fac Nonse Mollitia Quia Itaque! Iusto Necessi Ullam Recusand Nobi Quo Nequ Inulla Beatae Recusand Suscipit Ip Autem Rep Dol Quoquis Inu Rer Odiorem Suscipi Praes Accusant Quia Quosqu Anim Incidunt Nobis Odio Omnis"
-#     img: "assets/img/demo-image-02.jpg"
+projects:
+  - title: "Qulix Systems"
+    text: "Software Develeoper, DBA, System Administrator, Solutions Architect"
+    img: "assets/img/logo-qulix.png"
+  - title: "Wargaming"
+    text: "Team/Tech Lead, Solutions Architect"
+    img: "assets/img/logo-wg.png"
+  - title: "Juno Inc."
+    text: "Solutions Architect, Head of Backend Development"
+    img: "assets/img/logo-juno.png"
+  - title: "Humans Group"
+    text: "Chief Technology Information Officer"
+    img: "assets/img/logo-humans.png"
+  - title: "Advy.ai"
+    text: "independent consultant, Auditor, Mentor"
+    img: "assets/img/logo-advy.png"
+  - title: "Clics.Store"
+    text: "independent consultant, Auditor, Mentor"
+    img: "assets/img/logo-clics.png"
+  - title: "Miii"
+    text: "independent consultant, Auditor, Mentor"
+    img: "assets/img/logo-miii.png"
